@@ -1,0 +1,19 @@
+<% if pattern.accessibility_findings.count > 0 %>
+
+  <div class="subsection">
+    <h2>Accessibility Findings</h2>
+    <% for finding in pattern.accessibility_findings %>
+      <p><%=  format_output(finding.accessibility_finding) %>
+        <% if can_edit_pattern(pattern) %>
+          <br/>
+          [<%= link_to_remote 'Delete Finding',
+            :url => {:controller => "accessibility_finding",
+            :action => "destroy_finding",
+            :id => pattern,
+            :finding_id => finding},
+            :method => :delete %>]
+        <% end %>
+      </p>
+    <% end %>
+  </div>
+<% end %>

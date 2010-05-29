@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>Pattern Name</th><th>Usefulness</th><th>Description</th><th>Status</th>
+  </tr>
+  <% patterns.each do |pattern| %>
+    <tr>
+      <td><%= link_to pattern.name, {:controller => "patterns", :action => "show", :id => pattern.id} %></td>
+      <td><%= ratings_for pattern, :force_static => true, :dimension => :usefulness, :small => true, :show_user_rating => false %>
+        <span style="font-size: small">(Rates: <%= pattern.raters(:usefulness).size %>)</span></td>
+      <td><%= ratings_for pattern, :force_static => true, :dimension => :description, :small => true, :show_user_rating => false %>
+        <span style="font-size: small">(Rates: <%= pattern.raters(:description).size %>)</span></td>
+      <td><%= pattern.status.capitalize %></td>
+      <td><%= link_to 'Edit', {:controller => 'patterns', :action => 'editing_pattern', :id => pattern.id}, :class => "small-button" %> </td>
+      <td><%= link_to 'Destroy', pattern, :confirm => 'Are you sure?', :method => :delete, :class => "small-button" %> </td>
+      <td>
+        <%= link_to "History", {:controller => "edit_history", :action => "pattern_edit_history", :id => pattern}, :class => "small-button" %>
+      </td>
+    </tr>
+  <% end %>
+</table>

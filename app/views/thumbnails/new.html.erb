@@ -1,0 +1,13 @@
+<% form_for(@thumbnail, :url => (pattern_thumbnail_path(@pattern)), :html => { :multipart => true }) do |f| %>
+  <fieldset>
+    <legend>Set the Thumbnail for <%= @pattern.name %></legend>
+    <%= render(:partial => "thumbnails/create", :object => f) %>
+    <p>
+      <%= link_to 'Skip Adding Thumbnail', { :action => "editing_pattern", :id => @pattern}, :class => "button" %>
+      <%= f.submit "Add Thumbnail to #{@pattern.name}", :id => "submit" %>
+      <%#= link_to 'Previous Page', patterns_path(@pattern.id), :class => "button", :confirm => "Discard Current Changes?" %>
+      <%#= f.submit 'Save and Exit', :name => "exit", :id => "submit" %>
+    </p>
+  </fieldset>
+<% end %>
+

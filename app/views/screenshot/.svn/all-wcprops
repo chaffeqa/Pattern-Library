@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/72/pattern_library_project/Trunk/pattern_library/app/views/screenshot
+END
+destroy_screenshot.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/33/pattern_library_project/Trunk/pattern_library/app/views/screenshot/destroy_screenshot.html.erb
+END
+_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/screenshot/_list.html.erb
+END
+_list.html_1.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/248/pattern_library_project/Trunk/pattern_library/app/views/screenshot/_list.html_1.erb
+END
+create_screenshot.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/34/pattern_library_project/Trunk/pattern_library/app/views/screenshot/create_screenshot.html.erb
+END
+_create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/379/pattern_library_project/Trunk/pattern_library/app/views/screenshot/_create.html.erb
+END
+_list_editable.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/screenshot/_list_editable.html.erb
+END

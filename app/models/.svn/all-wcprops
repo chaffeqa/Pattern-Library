@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/models
+END
+pattern.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/app/models/pattern.rb
+END
+screenshot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/72/pattern_library_project/Trunk/pattern_library/app/models/screenshot.rb
+END
+parent_menu.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/131/pattern_library_project/Trunk/pattern_library/app/models/parent_menu.rb
+END
+submenu.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/app/models/submenu.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/app/models/user.rb
+END
+assigned_role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/models/assigned_role.rb
+END
+thumbnail.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/181/pattern_library_project/Trunk/pattern_library/app/models/thumbnail.rb
+END
+accessibility_finding.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/app/models/accessibility_finding.rb
+END
+rate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/app/models/rate.rb
+END
+group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/models/group.rb
+END
+role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/models/role.rb
+END
+usability_finding.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/app/models/usability_finding.rb
+END
+menu.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/131/pattern_library_project/Trunk/pattern_library/app/models/menu.rb
+END
+edit_history.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/260/pattern_library_project/Trunk/pattern_library/app/models/edit_history.rb
+END
+term.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/476/pattern_library_project/Trunk/pattern_library/app/models/term.rb
+END
+pattern_tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/29/pattern_library_project/Trunk/pattern_library/app/models/pattern_tag.rb
+END
+assigned_group.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/models/assigned_group.rb
+END
+code.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/app/models/code.rb
+END
+tag.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/models/tag.rb
+END

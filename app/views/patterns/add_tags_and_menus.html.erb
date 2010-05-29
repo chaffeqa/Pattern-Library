@@ -1,0 +1,47 @@
+
+<% form_remote_tag :url => {:controller => "menu", :action => "add_menu", :id => @pattern} do %>
+  <fieldset>
+    <legend>Add <%= @pattern.name %> to a menu</legend>
+    <%= select_tag(:menu_id, options_from_collection_for_select(@menus, 'id', 'name' )) %>
+    <p><%= submit_tag 'Add Menu', :id => "submit" %></p>
+  </fieldset>
+<% end %>
+
+<div class="current_additions">
+  <div id="menu_list">
+    <%= render(:partial => "menu/list_editable", :locals => { :pattern => @pattern }) %>
+  </div>
+</div>
+<br/>
+
+
+<% form_remote_tag( :url => {:controller => "tag", :action => "add_tag", :id => @pattern} ) do %>
+  <fieldset>
+    <legend>Add tags to <%= @pattern.name %></legend>
+    <%= select_tag(:tag_id, options_from_collection_for_select(@tags, 'id', 'name' )) %>
+    <p><%= submit_tag 'Add Tag', :id => "submit" %></p>
+  <% end %>
+
+  <h4>Or create your own:</h4>
+
+  <% remote_form_for(:tag, :url => {:controller => "tag", :action => "create_tag", :id => @pattern}) do |e| %>
+    <%= render(:partial => "tag/add", :object => e) %>
+    <p><%= e.submit 'Add Tag', :id => "submit" %></p>
+  </fieldset>
+<% end %>
+
+
+<div class="current_additions">
+  <div id="tag_list">
+    <%= render(:partial => "tag/list_editable", :locals => { :pattern => @pattern }) %>
+  </div>
+</div>
+<br/>
+
+<p>
+  <%= link_to "Back to #{@pattern.name}", { :action => "editing_pattern", :id => @pattern}, :class => "button", :confirm => "Warning: All unsaved examples will not be added!"  %>
+<%#= link_to "Finished Editing", {:controller => "edit_history", :action => "add_edit", :id => @pattern}, :class => "button", :confirm => "Warning: All unsaved examples will not be added!"  %>
+<%#= link_to 'Back',  {:action => "add_findings", :id => @pattern}, :class => "button"  %>
+<%#= link_to 'Save and Finish', {:action => "index"}, :class => "button" %>
+</p>
+<br/>

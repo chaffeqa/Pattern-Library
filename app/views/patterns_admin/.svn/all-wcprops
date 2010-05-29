@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/254/pattern_library_project/Trunk/pattern_library/app/views/patterns_admin
+END
+view_pattern.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/379/pattern_library_project/Trunk/pattern_library/app/views/patterns_admin/view_pattern.html.erb
+END
+approve_pattern.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/254/pattern_library_project/Trunk/pattern_library/app/views/patterns_admin/approve_pattern.html.erb
+END
+reject_pattern.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/254/pattern_library_project/Trunk/pattern_library/app/views/patterns_admin/reject_pattern.html.erb
+END
+submitted_patterns.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/526/pattern_library_project/Trunk/pattern_library/app/views/patterns_admin/submitted_patterns.html.erb
+END

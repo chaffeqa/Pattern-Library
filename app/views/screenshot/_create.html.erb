@@ -1,0 +1,30 @@
+<%= create.error_messages %>
+<div class="clearfix">
+  <label for="screenshot_uploaded_picture">Upload Screenshot<br/>
+    <span class="description">A screenshot will a helpful visual cue to the
+      pattern being described. There are no formal requirements for a screenshot.
+      An well-cropped image that displays the pattern in it entirety will
+      suffice.</span><br/>
+  </label>
+  <%= create.file_field("uploaded_picture") %><br/><br/><br/><br/><br/><br/>
+</div>
+
+<div class="clearfix">
+  <label for="screenshot_source">Image Source<br/>
+    <span class="description">It can be helpful to provide a link that shows
+      specifically the pattern being presented. This can provide better context
+      and in turn, better understanding of the pattern in a real, active web
+      site.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“http://www.google.com” or "iTunes v.21"</span>
+  </label>
+  <%= create.text_field :source %><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+
+<div class="clearfix">
+  <label for="screenshot_pearson_product">Is This A Pearson Product Example?<br/>
+    <span class="description">It will greatly help the developers if they know
+      that this is a Pearson Product Example.</span><br/>
+  </label>
+  <%= create.check_box :pearson_product  %><br/><br/><br/><br/>
+</div>

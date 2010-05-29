@@ -1,0 +1,23 @@
+<% if pattern.screenshots.count > 0 %>
+  <% for screenshot in pattern.screenshots %>
+    <div class="screenshot" >
+      <img src="<%= url_for(:controller => 'screenshot', :action => 'get_image_for_screenshot', :id => screenshot.id) %>"/>
+      <p><strong>Source</strong>: <%= screenshot.source %></p>
+      <p>
+        <% if  screenshot.pearson_product  %>
+          From a Pearson Product site
+        <% else %>
+          Not from a Pearson Product site
+        <% end %>
+      </p>
+      <p>[<%= link_to_remote 'Delete Image',
+          :update => { :success => "screenshot_list", :failure => "error_list" },
+          :url => {:controller => "screenshot",
+          :action => "destroy_screenshot",
+          :id => pattern,
+          :screenshot_id => screenshot},
+          :method => :delete %>]
+      </p>
+    </div>
+  <% end %>
+<% end %>

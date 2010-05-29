@@ -1,0 +1,77 @@
+/*
+
+	Copyright (c) 2009, Golden Orb, LLC. All rights reserved.
+	-------------------------------------------------------------
+	LICENSED FOR USE UNDER A CREATIVE LICENSE AGREEMENT
+	-------------------------------------------------------------
+	This document, and all creative material associated herein,
+	is protected under copyright law to be used exclusively with
+	the Content Management Systems of Golden Orb, LLC.
+	-------------------------------------------------------------
+	You can read the full creative license agreement at:
+	http://www.goldenorbventure.com/license
+	-------------------------------------------------------------
+
+	Version 1.0 - August 16, 2009
+
+	Author - Macklin Chaffee
+
+	/////////////////////////////////////////////////////////////
+
+	~ RESET STYLES ~
+	This is attempting to level the browser playing field, clearing 
+	the slate if you will.
+
+*/
+
+html, body, div, span,
+applet, object, iframe,
+p, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul, form, label,
+h1, h2, h3, h4, h5, h6, hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* hide/show */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+
+
+/* lightbox bandaid */
+#bottomNavClose {
+    line-height: 5;
+    border: 1px solid #fff;
+}

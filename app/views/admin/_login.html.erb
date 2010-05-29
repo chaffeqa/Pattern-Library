@@ -1,0 +1,11 @@
+<% form_remote_tag( :url => {:controller => "admin", :action => "login"} ) do %>
+  <div class="login-submit"><%= submit_tag "Login", :id => "submit" %></div>
+  <div>
+    <label for="name" class="login-label">Name:</label>
+    <%= text_field_tag :name, params[:name], :class => "login-input" %>
+  </div>
+  <div class="clearfix">
+    <label for="password" class="login-label">Password:</label>
+    <%= password_field_tag :password, params[:password], :class => "login-input" %>
+  </div>
+<% end %>

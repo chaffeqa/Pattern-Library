@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles/show.html.erb
+END

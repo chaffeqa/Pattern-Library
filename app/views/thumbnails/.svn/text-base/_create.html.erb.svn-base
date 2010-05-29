@@ -1,0 +1,22 @@
+<%= create.error_messages %>
+<div class="clearfix">
+  <label for="thumbnail_uploaded_picture">Upload Thumbnail<br/>
+    <span class="description">The thumbnail for the current pattern. This should
+      be an image of pattern or one that describes it appropriately.
+      <b>Note</b>: There is no size restriction, but the thumbnail image
+      will be shrunk to the same 120x120 size, so choose an appropriate image</span><br/>
+  </label>
+  <%= create.file_field("uploaded_picture") %>
+</div>
+
+<div class="clearfix">
+
+  <label for="thumbnail_source">Image Source<br/>
+    <span class="description">In case the image breaks or someone desires to
+      know the orgin of the thumbnail, this should direct them to the source.
+    </span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“http://www.google.com” or "iTunes v.21"</span>
+  </label>
+  <%= create.text_field :source %>
+</div>

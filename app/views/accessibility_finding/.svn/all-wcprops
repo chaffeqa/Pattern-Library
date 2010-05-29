@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/72/pattern_library_project/Trunk/pattern_library/app/views/accessibility_finding
+END
+destroy_finding.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/31/pattern_library_project/Trunk/pattern_library/app/views/accessibility_finding/destroy_finding.html.erb
+END
+_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/accessibility_finding/_list.html.erb
+END
+create_finding.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/31/pattern_library_project/Trunk/pattern_library/app/views/accessibility_finding/create_finding.html.erb
+END
+_create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/379/pattern_library_project/Trunk/pattern_library/app/views/accessibility_finding/_create.html.erb
+END
+_list_editable.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/accessibility_finding/_list_editable.html.erb
+END

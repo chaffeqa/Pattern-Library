@@ -1,0 +1,30 @@
+<ul class="category-menu">
+  <li id="head">Related Category Menu<br/></li>
+  <% menu = get_menu("related") %>
+  <% for parent_menu in menu %>
+    <% sum = 0 %>
+    <% parent_menu[1].each {|sm| sum += sm[1].size} %>
+    <li><%= link_to_function "#{parent_menu[0]} - (#{sum})", "javascript:switchit('#{parent_menu[0]}_related_li')" %></li>
+    <li id="<%=parent_menu[0]%>_related_li" class="category_menu_li" style="display:none;">
+      <ul>
+        <% for submenu in parent_menu[1]%>
+          <% if submenu[1].size > 0 %>
+            <li><%= link_to_function "#{submenu[0]} - (#{submenu[1].size})", "javascript:switchit('#{submenu[0]}_related_li')" %></li>
+            <li id="<%=submenu[0]%>_related_li" class="category_menu_li" style="display:none;">
+              <ul >
+                <% for pattern in submenu[1] %>
+                  <li><%= link_to pattern.name, :controller => 'patterns', :action => 'show', :id => pattern.id %></li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>
+
+<a onclick="work_menus('related')" href="#">
+<%#*<img id="tabrelated"  src="/images/related_tab.gif" alt="related" />%>
+<%= image_tag "related_tab.gif", :alt => "Related", :mouseover => image_path("related_tab_on.gif"), :id => "tabrelated" %>
+</a>

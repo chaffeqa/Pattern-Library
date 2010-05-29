@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  pattern_id: 1
+  source: MyString
+  data: 
+
+two:
+  pattern_id: 1
+  source: MyString
+  data: 

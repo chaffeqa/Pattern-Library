@@ -1,0 +1,37 @@
+<% form_for :screenshot, :url => { :controller => "screenshot", :action => "create_screenshot", :id => @pattern }, :html => { :multipart => true } do |f| %>
+  <fieldset>
+    <legend>Add site screenshots to <%= @pattern.name %></legend>
+    <%= render(:partial => "screenshot/create", :object => f) %>
+    <p><%= f.submit 'Save New Screenshot', :id => "submit" %></p>
+  </fieldset>
+<% end %>
+
+<div class="current_additions">
+  <div id="screenshot_list">
+    <%= render(:partial => "screenshot/list_editable", :locals => { :pattern => @pattern }) %>
+  </div>
+</div>
+<br/>
+
+
+
+<% remote_form_for :code, :url => {  :controller => "code", :action => "create_code", :id => @pattern }, :update => { :success => "code_list", :failure => "error_list" } do |e| %>
+  <fieldset>
+    <legend>Add code examples to <%= @pattern.name %></legend>
+    <%= render(:partial => "code/create", :object => e) %>
+    <p><%= e.submit 'Save New Code Example', :id => "submit" %></p>
+  </fieldset>
+<% end %>
+
+<div class="current_additions">
+  <div id="code_list">
+    <%= render(:partial => "code/list_editable", :locals => { :pattern => @pattern }) %>
+  </div>
+</div>
+<br/>
+
+<p>
+  <%= link_to "Back to #{@pattern.name}", { :action => "editing_pattern", :id => @pattern}, :class => "button", :confirm => "Warning: All unsaved examples will not be added!"  %>
+<%#= link_to "Back to #{@pattern}", {:controller => "edit_history", :action => "add_edit", :id => @pattern}, :class => "button", :confirm => "Warning: All unsaved examples will not be added!"  %>
+<%#= link_to 'Continue to Findings', {:action => "add_findings", :id => @pattern}, :method => :post, :class => "button", :confirm => "Warning: All unsaved examples will not be added!" %>
+</p><br/>

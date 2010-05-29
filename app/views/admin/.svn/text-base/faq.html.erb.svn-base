@@ -1,0 +1,91 @@
+<h1>FAQ</h1>
+
+<p><strong>Browsing:</strong></p>
+
+<p><b>Where is the categories menu?</b>
+<ul>
+  <li> On all of the pages, the categories menus appear on the left of the page. </li>
+  <li> To view the full list, click on the button named “Full” to open the accordion-style menu.</li>
+  <li> To view a list of patterns associated to your group, click on the button named “Group” to open the accordion-style menu.</li>
+  <li> When on a pattern page, you will see a button named “Related”. That menu will list patterns related to the current pattern you are viewing.</li>
+</ul>
+</p>
+
+
+<p><b>How can I view more patterns other than the ones listed on the home page?</b>
+<ul>
+  <li> The browsing page features pagination. To view the next set of patterns, you can click on the next number or the “Next” text link.</li>
+</ul>
+</p>
+
+
+<p><b>Why do some of the patterns not have all of the descriptions and examples?</b>
+<ul>
+  <li> The pattern library is user dependent. Some patterns remain incomplete until members add more information to patterns and/or add new patterns to the library.</li>
+</ul>
+</p>
+
+
+<p><b>How do I know which group I am in?</b>
+<ul>
+  <li> If you were assigned a group, you will have a group name listed under the “Members Area”. Otherwise, no group names will be listed.</li>
+</ul>
+</p><br/>
+
+
+<p><strong>Becoming a Member:</strong></p>
+
+
+
+<p><b>How can I become a member?</b>
+<ul>
+  <li> As is stands, only the administrator of the website can create a user.</li>
+  <li> Contact the administrator by email with a desired username, a password will be given to you in the confirmation reply.</li>
+</ul>
+</p><br/>
+
+
+<p><strong>Logging In:</strong></p>
+
+
+
+<p><b>How do I log in?</b>
+<ul>
+  <li> The login form is located on the right of the page under the “Members Area” box.</li>
+</ul>
+</p><br/>
+
+
+<p><strong>Creating/Editing a Pattern:</strong></p>
+
+
+
+<p><b>How do I create a new pattern?</b>
+<ul>
+  <li> Click the text link called “new pattern” in the header menu.</li>
+  <li> The link will redirect you to the description creation page.</li>
+  <li> Follow the instructions and examples given for each field.</li>
+  <li> Click the “Finish Editing” button.</li>
+</ul>
+</p>
+
+
+<p><b>How do I edit a pattern?</b>
+<ul>
+  <li> You may only edit a pattern if you have sufficient privileges.</li>
+  <li> With sufficient privileges, edit buttons will appear under the thumbnail and description div section.</li>
+  <li> Click on the specific button for the section you would like to edit.</li>
+  <li> Follow the instructions and examples given for the field you wish to edit.</li>
+  <ul>
+    <li>For images, you must click the “Save...” button to upload the image to the website.</li>
+  </ul>
+  <li> Click the “Finish Editing” button.</li>
+  <li> The button will redirect you to an “Edit Note” page.</li>
+  <ul>
+    <li>Enter the appropriate information of what changes were made in the field.</li>
+    <li>Click “Set Edit Note for...” to save the note.</li>
+  </ul>
+  <li> The page will redirect to the pattern page. All changes have been saved.</li>
+</ul>
+</p>
+

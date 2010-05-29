@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Menu</title>
+<style type="text/css">
+<!--
+a {
+	text-decoration:none;
+}
+
+#pullout-menu {
+	background-color: #000;
+	width: 160px;
+}
+#pullout-menu h2 {
+	background:url("stylesheets/stylesheets-images/img11.jpg") no-repeat scroll left top transparent;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:normal;
+	height:26px;
+	text-align:right;
+	width:130px;
+	padding: 20px 30px 0 0;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+#pullout-menu ul{
+	margin:0px;
+	border:medium none;
+	background:url("stylesheets/stylesheets-images/img12.jpg") no-repeat scroll left top transparent;
+	line-height:100%;
+	padding:0 20px;
+	list-style:none outside none;
+	margin:0;
+	text-align:right;
+}
+
+#pullout-menu li {
+	background:url("stylesheets/stylesheets-images/img13.jpg") repeat-x scroll left bottom transparent;
+	margin:0;
+	padding:0px 0;
+}
+#pullout-menu li a {
+	display:block;
+	padding: 7px 0;
+	width:130px;
+	color:#8F8F8F;
+	font-size:11px
+}
+
+#pullout-menu a:hover {
+	background-color: #333;
+	color: #FFF;
+}
+
+#tab {
+	position:absolute;
+	top:90px;
+	left:163px;
+	border-style: none;
+}
+
+-->
+</style>
+</head>
+<body  topmargin="0" leftmargin="5" marginwidth="5" marginheight="0">
+		  
+<script language="JavaScript1.2">
+	var isclosed = true
+	function workmenu()	{
+		if (isclosed)	{
+			window.parent.pull()
+			isclosed = false
+		}
+		else	{
+			window.parent.draw()
+			isclosed = true
+		}
+	}
+</script>
+<div id="pullout-menu">
+  <h2>Pattern Categories</h2>
+  <ul>
+    <li><a href="menu" target="_parent">Transitions</a></li>
+    <li><a href="menu" target="_parent">Searching</a></li>
+    <li><a href="menu" target="_parent">Menu</a></li>
+    <li><a href="menu" target="_parent">Links</a></li>
+    <li><a href="menu" target="_parent">Feedback</a></li>
+    <li><a href="menu" target="_parent">Data Management</a></li>
+    <li><a href="menu" target="_parent">Data Input</a></li>
+    <li><a href="menu" target="_parent">Basic Interaction</a></li>
+    <li><a href="menu" target="_parent">Aesthetics</a></li>
+  </ul>
+</div>
+<a onclick="workmenu()" onmouseout="document.tab.src='stylesheets/stylesheets-images/tab.gif'" onmouseover="document.tab.src='stylesheets/stylesheets-images/tab-focus.gif'" href="#">
+<img id="tab" width="30" height="102" src="stylesheets/stylesheets-images/tab.gif" alt="Categories" />
+</a>
+
+</body>
+</html>

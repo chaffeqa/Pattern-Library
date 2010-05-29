@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <th>User</th>
+    <th>Add Role</th>
+    <th>Remove Role</th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%=h user.get_display_name %></td>
+      <td>
+        <% form_tag({:controller => "roles_manager", :action => "add_role_to_user", :user_id => user.id}) do %>
+          <%= select_tag(:role_id, options_from_collection_for_select(@roles, 'id', 'name' )) %><br/>
+          <%= submit_tag('Add Role') %>
+        <% end %>
+      </td>
+      <td>
+        <% form_tag({:controller => "roles_manager", :action => "remove_role_from_user", :user_id => user.id}) do %>
+          <%= select_tag(:role_id, options_from_collection_for_select(user.roles.collect, 'id', 'name' )) %><br/>
+          <%= submit_tag('Remove Role') %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

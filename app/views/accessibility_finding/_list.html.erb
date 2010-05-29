@@ -1,0 +1,10 @@
+<% if pattern.accessibility_findings.count > 0 %>
+
+  <div class="subsection">
+    <h2>Accessibility Findings</h2>
+    <% for finding in pattern.accessibility_findings %>
+      <p><%=  format_output(finding.accessibility_finding) %>
+      </p>
+    <% end %>
+  </div>
+<% end %>

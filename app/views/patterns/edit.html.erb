@@ -1,0 +1,13 @@
+<h1>Editing pattern</h1>
+
+<% form_for(@pattern) do |f| %>
+  <%= f.error_messages %>
+  <%= render(:partial => "pattern", :object => f) %>
+  <p>
+    <%#= f.submit 'Save Changes and Continue', :id => "submit", :method => :update %>
+    <%#= link_to 'Previous Page', patterns_path(@pattern), :class => "button", :confirm => "Discard Current Changes?" %>
+    <%#= f.submit 'Save Changes and Exit', :id => "submit", :method => :update %>
+    <%= link_to 'Cancel', { :action => "editing_pattern", :id => @pattern}, :class => "button" %>
+    <%= f.submit 'Update Pattern', :id => "submit", :method => :update%>
+  </p>
+<% end %>

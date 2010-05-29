@@ -1,0 +1,31 @@
+<ul class="category-menu">
+  <li id="head">Group Category Menu<br/></li>
+  <% menu = get_menu("group") %>
+  <% for parent_menu in menu %>
+    <% sum = 0 %>
+    <% parent_menu[1].each {|sm| sum += sm[1].size} %>
+    <li><%= link_to_function "#{parent_menu[0]} - (#{sum})", "javascript:switchit('#{parent_menu[0]}_group_li')" %></li>
+    <li id="<%=parent_menu[0]%>_group_li" class="category_menu_li" style="display:none;">
+      <ul>
+        <% for submenu in parent_menu[1] %>
+          <% if submenu[1].size > 0 %>
+            <li><%= link_to_function "#{submenu[0]} - (#{submenu[1].size})", "javascript:switchit('#{submenu[0]}_group_li')" %></li>
+            <li id="<%=submenu[0]%>_group_li" class="category_menu_li" style="display:none;">
+              <ul >
+                <% for pattern in submenu[1] %>
+                  <li><%= link_to pattern.name, :controller => 'patterns', :action => 'show', :id => pattern.id %></li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>
+
+
+<a onclick="work_menus('group')" href="#">
+<%#*<img id="tabgroup" src="/images/group_tab.gif" alt="Group" />%>
+  <%= image_tag "group_tab.gif", :alt => "Group", :mouseover => image_path("group_tab_on.gif"), :id => "tabgroup" %>
+</a>

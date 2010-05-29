@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/86/pattern_library_project/Trunk/pattern_library/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/86/pattern_library_project/Trunk/pattern_library/config/initializers/session_store.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/config/initializers/mime_types.rb
+END

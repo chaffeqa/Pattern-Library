@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/72/pattern_library_project/Trunk/pattern_library/app/views/usability_finding
+END
+destroy_finding.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/32/pattern_library_project/Trunk/pattern_library/app/views/usability_finding/destroy_finding.html.erb
+END
+_list.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/usability_finding/_list.html.erb
+END
+create_finding.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/32/pattern_library_project/Trunk/pattern_library/app/views/usability_finding/create_finding.html.erb
+END
+_create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/379/pattern_library_project/Trunk/pattern_library/app/views/usability_finding/_create.html.erb
+END
+_list_editable.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/usability_finding/_list_editable.html.erb
+END

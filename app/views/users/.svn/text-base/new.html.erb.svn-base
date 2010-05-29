@@ -1,0 +1,21 @@
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+  <fieldset>
+    <legend>Enter User Details</legend>
+    <div class="clearfix">
+      <%= f.text_field :name, :size => 40 %>
+      <%= f.label :name %>
+    </div>
+    <div  class="clearfix">
+      <%= f.password_field :password, :size => 40 %>
+      <%= f.label :user_password, 'Password' %>
+    </div>
+    <div  class="clearfix">
+      <%= f.password_field :password_confirmation, :size => 40 %>
+      <%= f.label :user_password_confirmation, 'Confirm' %>
+    </div>
+    <div>
+      <%= f.submit "Create New Account" , :id => "submit" %>
+    </div>
+  </fieldset>
+<% end %>

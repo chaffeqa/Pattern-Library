@@ -1,0 +1,9 @@
+<%= render(:partial => "pattern_display_head", :locals => { :pattern => @pattern }) %>
+
+<% if can_edit_pattern(@pattern) %>
+  <div class="subsection">
+    <%= link_to "Edit #{@pattern.name} Pattern", {:action => 'editing_pattern', :id => @pattern}, :class => "button"  %>
+  </div>
+<% end %>
+
+<%= render(:partial => "pattern_display_body", :locals => { :pattern => @pattern }) %>

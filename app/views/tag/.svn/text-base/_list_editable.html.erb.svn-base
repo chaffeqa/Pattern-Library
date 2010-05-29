@@ -1,0 +1,19 @@
+<% if pattern.tags.count > 0 %>
+  <div class="subsection">
+    <h3>Tags</h3>
+    <p>
+      <% for tag in pattern.tags %>
+        <%= tag.name %>
+        <% if can_edit_pattern(pattern) %>
+          (<%= link_to_remote 'X',
+            :url => {:controller => "tag",
+            :action => "remove_tag",
+            :id => pattern,
+            :tag_id => tag},
+            :method => :delete %>)
+        <% end %>
+        ---
+      <% end %><br/>
+    </p>
+  </div>
+<% end %>

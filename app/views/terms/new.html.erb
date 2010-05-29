@@ -1,0 +1,10 @@
+<% form_for(@term) do |f| %>
+  <fieldset>
+    <legend>Glossary Term</legend>
+    <%= render(:partial => "create", :object => f) %>
+    <p>
+      <%= link_to 'Cancel', terms_path , :class => "button" %>
+      <%= f.submit "Create Term", :id => "submit" %>
+    </p>
+  </fieldset>
+<% end %>

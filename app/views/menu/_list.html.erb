@@ -1,0 +1,11 @@
+<% if pattern.menus.count > 0 %>
+  <div class="subsection">
+    <h3>Menus</h3>
+    <p>
+      <% for menu in pattern.menus %>
+        <%= menu.name %>
+        <br/>
+      <% end %>
+    </p>
+  </div>
+<% end %>

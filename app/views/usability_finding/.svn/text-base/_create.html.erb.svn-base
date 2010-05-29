@@ -1,0 +1,12 @@
+<%= create.error_messages %>
+<div class="clearfix">
+  <label for=usability_finding_usability_finding">Usability Finding For Pattern<br/>
+    <span class="description">Any information or personal findings on how to
+      make this pattern easier or more effective in use.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“When implementing c-menu javascript, if the user is
+      using an Internet Explorer version less than 7, the menu may not work.”
+    </span>
+  </label>
+  <%= create.text_area :usability_finding %>
+</div>

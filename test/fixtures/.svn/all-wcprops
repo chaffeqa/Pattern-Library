@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/98/pattern_library_project/Trunk/pattern_library/test/fixtures
+END
+groups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/fixtures/groups.yml
+END
+roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/fixtures/roles.yml
+END
+usability_findings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/usability_findings.yml
+END
+menus.yml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/menus.yml
+END
+terms.yml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/498/pattern_library_project/Trunk/pattern_library/test/fixtures/terms.yml
+END
+pattern_tags.yml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/pattern_tags.yml
+END
+assigned_groups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/fixtures/assigned_groups.yml
+END
+codes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/codes.yml
+END
+tags.yml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/tags.yml
+END
+parent_menus.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/140/pattern_library_project/Trunk/pattern_library/test/fixtures/parent_menus.yml
+END
+patterns.yml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/patterns.yml
+END
+assigned_roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/fixtures/assigned_roles.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/98/pattern_library_project/Trunk/pattern_library/test/fixtures/users.yml
+END
+submenus.yml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/submenus.yml
+END
+thumbnails.yml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/185/pattern_library_project/Trunk/pattern_library/test/fixtures/thumbnails.yml
+END
+accessibility_findings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/accessibility_findings.yml
+END
+examples.yml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/fixtures/examples.yml
+END
+edit_histories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/284/pattern_library_project/Trunk/pattern_library/test/fixtures/edit_histories.yml
+END
+rates.yml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/test/fixtures/rates.yml
+END

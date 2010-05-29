@@ -1,0 +1,73 @@
+<%= render(:partial => "pattern_display_head", :locals => { :pattern => @pattern }) %>
+
+<% if can_edit_pattern(@pattern) %>
+  <div class="subsection">
+    <%= link_to 'Edit Pattern', {:action => 'editing_pattern', :id => @pattern}, :class => "button"  %>
+  </div>
+<% end %>
+
+<%= render(:partial => "pattern_display_body", :locals => { :pattern => @pattern }) %>
+
+
+
+<div class="pattern-header">
+  <% if @pattern.thumbnail %>
+    <img class="thumbnail" src="<%= url_for(:controller => 'thumbnails', :action => 'get_image_for_thumbnail', :id => @pattern.thumbnail.id) %>"/>
+  <% else %>
+    <%= image_tag("default_thumbnail.jpg", :class => "thumbnail") %>
+  <% end %>
+  <h1><%=h @pattern.name %></h1><br/>
+  <p><strong>Description:</strong>
+    <%= format_output(@pattern.description)  %></p>
+  <p><strong>Creator: </strong>
+    <%=h @pattern.author_name %>
+  </p>
+</div><hr/>
+
+<% if can_edit_pattern(@pattern) %>
+  <div class="subsection">
+    <%= link_to 'Edit Descriptions', edit_pattern_path(@pattern), :class => "button"  %>
+    <% if @pattern.thumbnail %>
+      <%= link_to 'Edit Thumbnail', edit_thumbnail_path(@pattern.thumbnail), :class => "button"  %>
+    <% else %>
+      <%= link_to 'Add Thumbnail', new_pattern_thumbnail_path(@pattern), :class => "button"  %>
+    <% end %>
+    <%= link_to 'Add/Edit Tags and Menus', {:action => "add_tags_and_menus", :id => @pattern}, :class => "button"  %><br/>
+    <%= link_to 'Add/Edit Screenshots and Code Examples', {:action => "add_examples", :id => @pattern}, :class => "button"  %>
+    <%= link_to 'Add/Edit Usability/Accessability Findings', {:action => "add_findings", :id => @pattern}, :class => "button"  %>
+  </div>
+<% end %>
+
+
+<div class="subsection">
+  <h2>When To Use:</h2>
+  <p><%= format_output(@pattern.when_to_use) %></p>
+</div>
+
+<div class="subsection">
+  <h2>How To Interact</h2>
+  <p><%= format_output(@pattern.how_to_interact) %></p>
+</div>
+
+<div class="subsection">
+  <h2>How To Implement</h2>
+  <p><%= format_output(@pattern.how_to_implement) %></p>
+</div>
+
+<div class="subsection">
+  <h2 class="title">Why use</h2>
+  <p><%= format_output(@pattern.why_use) %></p>
+  <div class="meta"><% if can_edit_pattern(@pattern) %><%= link_to 'Edit', edit_pattern_path(@pattern), :class => 'edit' %><% end %></div>
+</div>
+
+<div id="screenshot_list"><%= render(:partial => "screenshot/list", :locals => { :pattern => @pattern }) %></div>
+
+<div id="code_list"><%= render(:partial => "code/list", :locals => { :pattern => @pattern }) %></div>
+
+<div id="accessibility_list"><%= render(:partial => "accessibility_finding/list", :locals => { :pattern => @pattern }) %></div>
+
+<div id="usability_list"><%= render(:partial => "usability_finding/list",  :locals => { :pattern => @pattern }) %></div>
+
+<div id="tag_list"><%= render(:partial => "tag/list", :locals => { :pattern => @pattern }) %></div>
+
+<div id="menu_list"><%= render(:partial => "menu/list", :locals => { :pattern => @pattern }) %></div>

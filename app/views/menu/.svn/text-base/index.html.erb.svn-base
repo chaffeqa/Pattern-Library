@@ -1,0 +1,14 @@
+<h1>Category Menus</h1>
+<ul>
+  <% for parent_menu in @parent_menus %>
+    <li><b><%= parent_menu.name %></b> - <%= link_to "X", {:action => "destroy_parent_menu", :id => parent_menu.id}, :confirm => "Are you sure? This action will delete all submenus for this menu as well", :method => :delete  %></li>
+    <ul>
+      <% for menu in parent_menu.menus %>
+        <li><%= menu.name %> - <%= link_to "X", {:action => "destroy_menu", :id => menu.id}, :confirm => "Are you sure?", :method => :delete  %></li>
+      <% end %>
+      <li><%= link_to "Add New Submenu", :action => "new_menu", :id => parent_menu.id %></li>
+    </ul>
+  <% end %>
+  <li><%= link_to "Add New Menu", :action => "new_parent_menu" %></li>
+</ul>
+

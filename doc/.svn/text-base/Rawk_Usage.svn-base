@@ -1,0 +1,1 @@
+ruby config/initializers/rawk1.2.rb < log/production.log

@@ -1,0 +1,20 @@
+<h3><%=h @user.get_display_name %>'s Approved Patterns:</h3>
+<% if @my_approved_patterns.size > 0 %>
+  <%= render(:partial => "user_patterns", :locals => { :patterns => @my_approved_patterns }) %>
+<% else %>
+  <p>No Current Approved Patterns</p>
+<% end %>
+
+<h3><%=h @user.name %>'s Patterns Needing Approval:</h3>
+<% if @my_needs_approval_patterns.size > 0 %> 
+  <%= render(:partial => "user_patterns", :locals => { :patterns => @my_needs_approval_patterns }) %>
+<% else %>
+  <p>No Current Patterns Pending Approval</p>
+<% end %>
+
+<h3><%=h @user.name %>'s Rejected Patterns:</h3>
+<% if @my_rejected_patterns.size > 0 %>  
+  <%= render(:partial => "user_patterns", :locals => { :patterns => @my_rejected_patterns }) %>
+<% else %>
+  <p>No Current Rejected Patterns</p>
+<% end %>

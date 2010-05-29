@@ -1,0 +1,8 @@
+<% if pattern.usability_findings.count > 0 %>
+  <div class="subsection">
+    <h2>Usability Findings</h2>
+    <% for finding in pattern.usability_findings %>
+      <p><%=  format_output(finding.usability_finding) %></p>
+    <% end %>
+  </div>
+<% end %>

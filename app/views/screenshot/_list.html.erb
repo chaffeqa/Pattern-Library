@@ -1,0 +1,26 @@
+<% if pattern.screenshots.count > 0 %>
+  <div class="screenshots">
+    <h2 class="title">Screenshot Examples</h2>
+    <table>
+      <tr>
+        <% for screenshot in pattern.screenshots %>
+          <td>
+            <div style="text-align: center;">
+              <a href="<%= url_for(:controller => 'screenshot', :action => 'get_image_for_screenshot', :id => screenshot.id)%>"
+                 rel="lightbox[screenshots]"
+                 title="Source: <%=h screenshot.source %>">
+                   <%= image_tag(url_for(:controller => 'screenshot', :action => 'get_image_for_screenshot', :id => screenshot.id), :size => "180x180", :alt => screenshot.source )%>
+              </a><br/>
+              <strong>Source</strong>: <%=h screenshot.source %><br/>
+              <% if  screenshot.pearson_product  %>
+                From a Pearson Product
+              <% else %>
+                Not from a Pearson Product
+              <% end %>
+            </div>
+          </td>
+        <% end %>
+      </tr>
+    </table>
+  </div>
+<% end %>

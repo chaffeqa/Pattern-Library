@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/lib/tasks
+END
+db_set_unknown_patterns.rake
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/335/pattern_library_project/Trunk/pattern_library/lib/tasks/db_set_unknown_patterns.rake
+END
+db_set_pattern_status.rake
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/254/pattern_library_project/Trunk/pattern_library/lib/tasks/db_set_pattern_status.rake
+END
+db_add_roles.rake
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/lib/tasks/db_add_roles.rake
+END
+db_add_menus.rake
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/139/pattern_library_project/Trunk/pattern_library/lib/tasks/db_add_menus.rake
+END
+db_add_initial_admin_account.rake
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/lib/tasks/db_add_initial_admin_account.rake
+END
+db_add_groups.rake
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/lib/tasks/db_add_groups.rake
+END

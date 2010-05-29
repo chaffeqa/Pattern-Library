@@ -1,0 +1,9 @@
+<p>
+  <b>Logged in as</b>:
+  <%=h user.name %>
+</p>
+<div style="float: right; margin-right: 10px;"><%= link_to_remote 'Logout',  :url => { :controller => "admin", :action => "logout"}, :html => {:class => "button"} %></div>
+<p style="width: 65%;">
+  <b>Your groups:</b><br/>
+  <span style="font-size: 10px;"><%=h get_user_groups.join(" - ") %></span>
+</p>

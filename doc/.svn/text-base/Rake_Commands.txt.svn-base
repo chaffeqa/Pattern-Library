@@ -1,0 +1,6 @@
+rake RAILS_ENV=production utils:add_menus
+rake RAILS_ENV=production utils:add_roles
+rake RAILS_ENV=production utils:add_groups
+rake RAILS_ENV=production utils:add_initial_admin_account
+rake RAILS_ENV=production utils:set_pattern_status
+rake RAILS_ENV=production utils:db_set_unknown_patterns

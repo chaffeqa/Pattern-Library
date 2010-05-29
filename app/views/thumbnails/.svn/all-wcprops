@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/181/pattern_library_project/Trunk/pattern_library/app/views/thumbnails
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/476/pattern_library_project/Trunk/pattern_library/app/views/thumbnails/edit.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/476/pattern_library_project/Trunk/pattern_library/app/views/thumbnails/new.html.erb
+END
+_create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/379/pattern_library_project/Trunk/pattern_library/app/views/thumbnails/_create.html.erb
+END

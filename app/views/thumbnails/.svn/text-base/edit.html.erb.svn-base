@@ -1,0 +1,30 @@
+<% form_for(@thumbnail, :url => (pattern_thumbnail_path(@pattern)), :html => { :multipart => true }) do |f| %>
+  <fieldset>
+    <legend>Set the Thumbnail for <%= @pattern.name %></legend>
+    <%= render(:partial => "thumbnails/create", :object => f) %>
+  </fieldset>
+
+
+  <p>
+    <%= link_to 'Cancel', { :action => "editing_pattern", :id => @pattern}, :class => "button" %>
+    <%= f.submit "Change Thumbnail for #{@pattern.name}", :id => "submit", :method => :update %>
+  <%#= link_to 'Previous Page', edit_pattern_path(@pattern), :class => "button", :confirm => "Discard Current Changes?" %>
+  <%#= f.submit 'Save Changes and Exit', :name => "exit", :id => "submit", :method => :update %>
+  </p>
+
+
+  <div class="current_additions">
+    <h2>Current Thumbnail for <%=h @pattern.name %> pattern:</h2>
+    <% if @pattern.thumbnail %>
+      <div>
+        <img src="<%= url_for(:controller => 'thumbnails', :action => 'get_image_for_thumbnail', :id => @pattern.thumbnail) %>" class="thumbnail"/>
+        <br/>
+        <strong>Source</strong>: <%= @pattern.thumbnail.source %>
+      </div>
+    <% else %>
+      <div><%= image_tag("default_thumbnail.jpg", :class => "thumbnail") %></div>
+      <br/>
+    <% end %>
+    <br/><br/><br/><br/>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>Pearson Pattern Library Users</h1>
+<table>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%=h user.name %></td>
+      <td><%= link_to "Patterns", user, :class => "small-button" %></td>
+      <td><%= link_to "Groups", {:action => 'user_groups', :id => user.id}, :class => "small-button" %></td>
+      <td><%= link_to 'Edit User', edit_user_path(user), :class => "small-button" %></td>
+      <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete, :class => "small-button" %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user', new_user_path, :class => "button" %>

@@ -1,0 +1,22 @@
+<%= create.error_messages %>
+<div class="clearfix">
+  <label for="term_term">Term<br/>
+    <span class="description">The term you will be defining</span><br/>
+    <span class="example_header">Example:</span>
+    <span class="example">"Avatar"</span>
+  </label>
+  <%= create.text_field :term %>
+</div>
+
+<div class="clearfix">
+
+  <label for="term_definition">Definition<br/>
+    <span class="description">A well constructed definition of the term.  This
+      definition should be short yet descriptive.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“An internet graphical representation of the user.
+      Avatars are user generated content usually uploaded from their personal
+      computers."</span>
+  </label>
+  <%= create.text_area :definition %>
+</div>

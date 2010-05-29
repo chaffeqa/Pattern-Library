@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles_manager
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles_manager/index.html.erb
+END
+add_role_to_user.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles_manager/add_role_to_user.html.erb
+END
+remove_role_from_user.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/105/pattern_library_project/Trunk/pattern_library/app/views/roles_manager/remove_role_from_user.html.erb
+END

@@ -1,0 +1,3 @@
+<h1>Screenshot#create_screenshot</h1>
+<p>Find me in app/views/screenshot/create_screenshot.html.erb</p>
+<%= error_messages_for :screenshot %>

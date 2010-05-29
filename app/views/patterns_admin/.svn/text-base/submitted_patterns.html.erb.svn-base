@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <th>Pattern Name</th><th>Pattern Creator</th><th>Usefulness</th><th>Description</th><th>Edit History</th>
+  </tr>
+  <% @needs_approval_patterns.each do |pattern| %>
+    <tr>
+      <td><%= link_to pattern.name, {:action => "view_pattern", :id => pattern.id} %></td>
+      <% if pattern.user %>
+        <td><%=h pattern.user.name %></td>
+      <% else %>
+        <td>Unknown</td>
+      <% end %>
+      <td><%= ratings_for pattern, :force_static => true, :dimension => :usefulness, :small => true, :show_user_rating => false %>
+        <span style="font-size: small">(Rates: <%= pattern.raters(:usefulness).size %>)</span></td>
+      <td><%= ratings_for pattern, :force_static => true, :dimension => :description, :small => true, :show_user_rating => false %>
+        <span style="font-size: small">(Rates: <%= pattern.raters(:description).size %>)</span></td>
+      <td><%= link_to "History", {:controller => "edit_history", :action => "pattern_edit_history", :id => pattern} %></td>
+      <td><%= link_to "Approve", {:action => "approve_pattern", :id => pattern.id}, :class => "small-button", :method => :post  %></td>
+      <td><%= link_to "Reject", {:action => "reject_pattern", :id => pattern.id}, :class => "small-button", :method => :post  %></td>
+    </tr>
+  <% end %>
+</table>

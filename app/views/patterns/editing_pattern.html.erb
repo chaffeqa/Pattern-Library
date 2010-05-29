@@ -1,0 +1,25 @@
+<%= render(:partial => "pattern_display_head", :locals => { :pattern => @pattern }) %>
+
+<% if can_edit_pattern(@pattern) %>
+  <div class="subsection">
+    <table>
+      <tr>
+        <td style="text-align: center;"><%= link_to 'Edit Descriptions', edit_pattern_path(@pattern), :class => "small-button"  %></td>
+        <% if @pattern.thumbnail %>
+          <td style="text-align: center;"><%= link_to 'Edit Thumbnail', edit_thumbnail_path(@pattern.thumbnail), :class => "small-button"  %></td>
+        <% else %>
+          <td style="text-align: center;"><%= link_to 'Add Thumbnail', new_pattern_thumbnail_path(@pattern), :class => "small-button"  %></td>
+        <% end %>
+        <td style="text-align: center;"><%= link_to 'Add/Edit Tags and Menus', {:action => "add_tags_and_menus", :id => @pattern}, :class => "small-button"  %></td>
+      </tr>
+    </table><table>
+      <tr>
+        <td style="text-align: center;"><%= link_to 'Add/Edit Screenshots and Code Examples', {:action => "add_examples", :id => @pattern}, :class => "small-button"  %></td>
+        <td style="text-align: center;"><%= link_to 'Add/Edit Usability/Accessability Findings', {:action => "add_findings", :id => @pattern}, :class => "small-button"  %></td>
+      </tr>
+    </table>
+    <%= link_to "Finish Editing #{@pattern.name}", {:controller => "edit_history", :action => "add_edit", :id => @pattern}, :method => :post , :class => "button"  %>
+  </div>
+<% end %>
+
+<%= render(:partial => "pattern_editable_body", :locals => { :pattern => @pattern }) %>

@@ -1,0 +1,38 @@
+<% remote_form_for :accessibility_finding, :url => { :controller => "accessibility_finding", :action => "create_finding", :id => @pattern } do |f| %>
+  <fieldset>
+    <legend>Add accessibility findings to <%= @pattern.name %></legend>
+    <%= render(:partial => "accessibility_finding/create", :object => f) %>
+    <p><%= f.submit 'Add Accessibility Finding', :id => "submit" %></p>
+  </fieldset>
+<% end %>
+
+<div class="current_additions">
+  <div id="accessibility_list">
+    <%= render(:partial => "accessibility_finding/list_editable", :locals => { :pattern => @pattern }) %>
+  </div>
+</div>
+<br/>
+
+
+<% remote_form_for :usability_finding, :url => { :controller => "usability_finding", :action => "create_finding", :id => @pattern } do |e| %>
+  <fieldset>
+    <legend>Add usability findings to <%= @pattern.name %></legend>
+    <%= render(:partial => "usability_finding/create", :object => e) %>
+    <p><%= e.submit 'Add Usability Finding', :id => "submit" %></p>
+  </fieldset>
+<% end %>
+
+<div class="current_additions">
+  <div id="usability_list">
+    <%= render(:partial => "usability_finding/list_editable",  :locals => { :pattern => @pattern }) %>
+  </div>
+</div>
+<br/>
+
+<p>
+  <%= link_to "Back to #{@pattern.name}", { :action => "editing_pattern", :id => @pattern}, :class => "button", :confirm => "Warning: All unsaved examples will not be added!"  %>
+<%#= link_to "Finished Editing", {:controller => "edit_history", :action => "add_edit", :id => @pattern}, :class => "button", :confirm => "Warning: All unsaved examples will not be added!"  %>
+<%#= link_to 'Back', {:controller => "patterns", :action => "add_examples", :id => @pattern}, :class => "button"  %>
+<%#= link_to 'Save and Continue',{:action => "add_tags_and_menus", :id => @pattern}, :method => :post, :class => "button" %>
+</p>
+<br/>

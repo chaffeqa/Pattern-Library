@@ -1,0 +1,10 @@
+<% form_for(@term) do |f| %>
+  <fieldset>
+    <legend>Editing information for <%= @term.term %></legend>
+    <%= render(:partial => "create", :object => f) %>
+    <p>
+      <%= link_to 'Cancel', terms_path , :class => "button" %>
+      <%= f.submit "Update #{@term.term}", :id => "submit" %>
+    </p>
+  </fieldset>
+<% end %>

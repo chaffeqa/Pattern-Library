@@ -1,0 +1,9 @@
+<%= create.error_messages %>
+<div class="clearfix">
+  <label for=code_code_url">Code Example<br/>
+    <span class="description">Examples of implementation.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“http://code_example.com/code”</span>
+  </label>
+  <%= create.text_field :code_url %><br/><br/><br/><br/>
+</div>

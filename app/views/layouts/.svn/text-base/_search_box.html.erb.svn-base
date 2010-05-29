@@ -1,0 +1,4 @@
+<script type="text/javascript">
+  var domain = "<%= sitesearch_url %> "
+</script>
+<%= javascript_include_tag 'search.js' %>

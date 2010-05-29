@@ -1,0 +1,23 @@
+<h2>Edit History for <%=h @pattern.name %></h2>
+<p>
+  <strong>Pattern Author:</strong> <%=h @pattern.author_name %><br/>
+  <strong>Pattern Creation Date:</strong> <%=h @pattern.created_at.strftime("%m/%d/%Y") %>
+</p>
+<table>
+  <tr>
+    <th>Editor</th>
+    <th>Date of Edit</th>
+    <th>View Note</th>
+  </tr>
+  <% for note in @edit_history %>
+    <tr>
+      <td><%=h note.user.name %></td>
+      <td><%=h note.created_at.strftime("%m/%d/%Y") %></td>
+      <td><%=h note.note %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= will_paginate @edit_history %></p>
+
+<%= link_to 'Back', :back, :class => "small-button" %>

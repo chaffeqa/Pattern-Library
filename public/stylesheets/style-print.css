@@ -1,0 +1,53 @@
+/*	
+
+	Copyright (c) 2009, Golden Orb, LLC. All rights reserved.
+	-------------------------------------------------------------
+	LICENSED FOR USE UNDER A CREATIVE LICENSE AGREEMENT
+	-------------------------------------------------------------
+	This document, and all creative material associated herein,
+	is protected under copyright law to be used exclusively with
+	the Content Management Systems of Golden Orb, LLC.
+	-------------------------------------------------------------
+	You can read the full creative license agreement at:
+	http://www.goldenorbventure.com/license
+	-------------------------------------------------------------
+	
+	Version 1.0 - August 16, 2009
+
+	Author - Macklin Chaffee
+		
+	/////////////////////////////////////////////////////////////
+	
+	~ PRINT STYLES ~
+	Printer friendly style.
+*/
+
+body {
+	background: #fff;
+	color: #000;
+	width: 8.5in;
+}	
+
+
+
+/* stuff to hide */
+#adminbar,
+#navigation {
+	display: none;
+}
+
+
+
+
+
+
+
+/* STUFF TO REWRITE */
+
+	/* forcing the page width to be printer friendly */
+	#pageContainer {
+		width: 8.5in;
+		margin: 0;
+	}
+
+		

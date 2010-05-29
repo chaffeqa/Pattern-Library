@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/98/pattern_library_project/Trunk/pattern_library/test/unit
+END
+submenu_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/submenu_test.rb
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/98/pattern_library_project/Trunk/pattern_library/test/unit/user_test.rb
+END
+assigned_role_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/unit/assigned_role_test.rb
+END
+thumbnail_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/185/pattern_library_project/Trunk/pattern_library/test/unit/thumbnail_test.rb
+END
+accessibility_finding_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/accessibility_finding_test.rb
+END
+example_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/example_test.rb
+END
+rate_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/test/unit/rate_test.rb
+END
+group_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/unit/group_test.rb
+END
+role_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/unit/role_test.rb
+END
+usability_finding_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/usability_finding_test.rb
+END
+menu_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/menu_test.rb
+END
+edit_history_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/260/pattern_library_project/Trunk/pattern_library/test/unit/edit_history_test.rb
+END
+term_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/498/pattern_library_project/Trunk/pattern_library/test/unit/term_test.rb
+END
+pattern_tag_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/pattern_tag_test.rb
+END
+assigned_group_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/test/unit/assigned_group_test.rb
+END
+code_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/code_test.rb
+END
+tag_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/tag_test.rb
+END
+pattern_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/pattern_test.rb
+END
+category_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/22/pattern_library_project/Trunk/pattern_library/test/unit/category_test.rb
+END
+parent_menu_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/140/pattern_library_project/Trunk/pattern_library/test/unit/parent_menu_test.rb
+END

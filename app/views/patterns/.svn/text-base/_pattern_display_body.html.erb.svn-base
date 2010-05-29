@@ -1,0 +1,59 @@
+<% unless get_user.nil? %>
+<table class="rating">
+  <tr>
+    <th>Usefulness Rating:</th>
+    <th>Description Rating:</th>
+  </tr>
+  <tr>
+    <td><%= ratings_for pattern, :dimension => :usefulness, :small => false %></td>
+    <td><%= ratings_for pattern, :dimension => :description, :small => false %></td>
+  </tr>
+  <tr>
+    <td>Your Former Rating: <%= ratings_for pattern, :force_static => true, :dimension => :usefulness, :small => true, :show_user_rating => true %></td>
+    <td>Your Former Rating: <%= ratings_for pattern, :force_static => true, :dimension => :description, :small => true, :show_user_rating => true %></td>
+  </tr>
+</table>
+<% else %>
+<table class="rating">
+  <tr>
+    <th>Usefulness Rating:</th>
+    <th>Description Rating:</th>
+  </tr>
+  <tr>
+    <td><%= ratings_for pattern, :force_static => true, :dimension => :usefulness, :small => false %></td>
+    <td><%= ratings_for pattern, :force_static => true, :dimension => :description, :small => false %></td>
+  </tr>
+</table>
+<% end %>
+
+<div class="subsection">
+  <h2>When To Use:</h2>
+  <p><%= format_output(pattern.when_to_use) %></p>
+</div>
+
+<div class="subsection">
+  <h2>How To Interact</h2>
+  <p><%= format_output(pattern.how_to_interact) %></p>
+</div>
+
+<div class="subsection">
+  <h2>How To Implement</h2>
+  <p><%= format_output(pattern.how_to_implement) %></p>
+</div>
+
+<div class="subsection">
+  <h2 class="title">Why use</h2>
+  <p><%= format_output(pattern.why_use) %></p>
+</div>
+
+<div id="screenshot_list"><%= render(:partial => "screenshot/list", :locals => { :pattern => pattern }) %></div>
+
+<div id="code_list"><%= render(:partial => "code/list", :locals => { :pattern => pattern }) %></div>
+
+<div id="accessibility_list"><%= render(:partial => "accessibility_finding/list", :locals => { :pattern => pattern }) %></div>
+
+<div id="usability_list"><%= render(:partial => "usability_finding/list",  :locals => { :pattern => pattern }) %></div>
+
+<div id="tag_list"><%= render(:partial => "tag/list", :locals => { :pattern => pattern }) %></div>
+
+<div id="menu_list"><%= render(:partial => "menu/list", :locals => { :pattern => pattern }) %></div>

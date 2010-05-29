@@ -1,0 +1,13 @@
+<% user = get_user %>
+<ul>
+  <li><a href="<%= url_for(patterns_path) %>">Pattern List</a></li>
+  <% if user %>
+    <li><a href="<%= url_for(:controller => 'patterns', :action => 'new') %>">New Pattern</a></li>
+    <li><%= link_to 'Your Groups', {:controller => 'users', :action => 'user_groups', :id => user.id} %></li>
+    <li><a href="<%= url_for(:controller => 'users', :action => 'show', :id => user) %>">Your Patterns</a></li>
+  <% else %>
+    <li><%= link_to 'Create Account', {:controller => 'users', :action => 'new'} %></li>
+  <% end %>
+  <li><%= link_to 'Glossary', {:controller => 'terms', :action => 'index'} %></li>
+  <li><%= link_to 'FAQ', {:controller => 'admin', :action => 'faq'} %></li>
+</ul>

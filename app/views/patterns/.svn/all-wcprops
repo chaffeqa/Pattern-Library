@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/99/pattern_library_project/Trunk/pattern_library/app/views/patterns
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/476/pattern_library_project/Trunk/pattern_library/app/views/patterns/edit.html.erb
+END
+add_examples.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/492/pattern_library_project/Trunk/pattern_library/app/views/patterns/add_examples.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/app/views/patterns/index.html.erb
+END
+add_findings.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/492/pattern_library_project/Trunk/pattern_library/app/views/patterns/add_findings.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/476/pattern_library_project/Trunk/pattern_library/app/views/patterns/new.html.erb
+END
+_pattern.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/181/pattern_library_project/Trunk/pattern_library/app/views/patterns/_pattern.html.erb
+END
+_pattern_display_body.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/518/pattern_library_project/Trunk/pattern_library/app/views/patterns/_pattern_display_body.html.erb
+END
+add_tags_and_menus.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/492/pattern_library_project/Trunk/pattern_library/app/views/patterns/add_tags_and_menus.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/526/pattern_library_project/Trunk/pattern_library/app/views/patterns/show.html.erb
+END
+editing_pattern.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/464/pattern_library_project/Trunk/pattern_library/app/views/patterns/editing_pattern.html.erb
+END
+show.html_1.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/patterns/show.html_1.erb
+END
+_pattern_display_head.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/526/pattern_library_project/Trunk/pattern_library/app/views/patterns/_pattern_display_head.html.erb
+END
+_pattern_editable_body.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/460/pattern_library_project/Trunk/pattern_library/app/views/patterns/_pattern_editable_body.html.erb
+END

@@ -1,0 +1,4 @@
+<% @patterns.each do |pattern| %>
+  <div> <%= render(:partial => "pattern_display_head", :locals => { :pattern => pattern }) %> </div>
+<% end %>
+<%= will_paginate @patterns %>

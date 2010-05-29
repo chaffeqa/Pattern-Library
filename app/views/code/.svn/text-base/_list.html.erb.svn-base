@@ -1,0 +1,8 @@
+<% if pattern.codes.count > 0 %>
+  <div class="subsection">
+    <h2>Code Examples</h2>
+    <% for code in pattern.codes %>
+      <p><a href="<%= code.code_url %>"> <%=h code.code_url %> </a></p>
+    <% end %>
+  </div>
+<% end %>

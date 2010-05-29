@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/views/groups_manager
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/views/groups_manager/index.html.erb
+END
+remove_group_from_user.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/views/groups_manager/remove_group_from_user.html.erb
+END
+add_group_to_user.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/117/pattern_library_project/Trunk/pattern_library/app/views/groups_manager/add_group_to_user.html.erb
+END

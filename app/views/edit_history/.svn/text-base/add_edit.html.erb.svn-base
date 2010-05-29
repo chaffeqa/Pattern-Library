@@ -1,0 +1,12 @@
+<% form_for(@edit_history, :url => {:action => "create_edit", :pattern_id => @pattern}) do |f| %>
+  <fieldset>
+    <legend>Create Edit Note for <%= @pattern.name %></legend>
+    <%= render(:partial => "edit_history/create", :object => f) %>
+    <p>
+      <%= link_to 'Skip Writing Note', {:controller => "patterns", :action => "show", :id => @pattern}, :class => "button" %>
+      <%= f.submit "Set Edit Note for #{@pattern.name}", :id => "submit" %>
+      <%#= link_to 'Previous Page', patterns_path(@pattern.id), :class => "button", :confirm => "Discard Current Changes?" %>
+      <%#= f.submit 'Save and Exit', :name => "exit", :id => "submit" %>
+    </p>
+  </fieldset>
+<% end %>

@@ -1,0 +1,30 @@
+/*
+
+	Copyright (c) 2009, Golden Orb, LLC. All rights reserved.
+	-------------------------------------------------------------
+	LICENSED FOR USE UNDER A CREATIVE LICENSE AGREEMENT
+	-------------------------------------------------------------
+	This document, and all creative material associated herein,
+	is protected under copyright law to be used exclusively with
+	the Content Management Systems of Golden Orb, LLC.
+	-------------------------------------------------------------
+	You can read the full creative license agreement at:
+	http://www.goldenorbventure.com/license
+	-------------------------------------------------------------
+	
+	Version 1.0 - August 16, 2009
+
+	Author - Macklin Chaffee
+
+	/////////////////////////////////////////////////////////////
+	
+	~ STYLES ~
+	Load the appropriate stylesheets.
+*/
+
+
+@import "style-reset.css";
+@import "style-implied.css";
+@import "ajaxful_rating.css";
+
+   

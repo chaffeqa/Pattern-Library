@@ -1,0 +1,10 @@
+<% if pattern.tags.count > 0 %>
+  <div class="subsection">
+    <h3>Tags</h3>
+    <p>
+      <% for tag in pattern.tags %>
+        <%= tag.name %> --- 
+      <% end %><br/>
+    </p>
+  </div>
+<% end %>

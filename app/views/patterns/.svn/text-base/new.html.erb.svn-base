@@ -1,0 +1,11 @@
+<% form_for(@pattern) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render(:partial => "pattern", :object => f) %>
+  <p>
+    <%= link_to 'Cancel', { :action => "index"}, :class => "button" %>
+    <%= f.submit 'Create Pattern', :id => "submit"%>
+  </p>
+<% end %>
+
+

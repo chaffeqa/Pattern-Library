@@ -1,0 +1,19 @@
+<% if pattern.menus.count > 0 %>
+  <div class="subsection">
+    <h3>Menus</h3>
+    <p>
+      <% for menu in pattern.menus %>
+        <%= menu.name %>
+        <% if can_edit_pattern(pattern) %>
+          (<%= link_to_remote 'X',
+            :url => {:controller => "menu",
+            :action => "remove_menu",
+            :id => pattern,
+            :menu_id => menu},
+            :method => :delete %>)
+        <% end %>
+        <br/>
+      <% end %>
+    </p>
+  </div>
+<% end %>

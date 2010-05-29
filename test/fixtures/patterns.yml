@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  when_to_use: MyText
+  how_to_interact: MyText
+  how_to_implement: MyText
+  why_use: MyText
+
+two:
+  name: MyString
+  description: MyText
+  when_to_use: MyText
+  how_to_interact: MyText
+  how_to_implement: MyText
+  why_use: MyText

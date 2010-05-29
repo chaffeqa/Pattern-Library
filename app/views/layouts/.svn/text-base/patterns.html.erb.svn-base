@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="google-site-verification" content="U1JR7zgYtpw-8LPhJ2Lno53kdQ-hGqWk5IQX0CE883k" />
+    <title>Pearson Pattern Library</title>
+    <%= stylesheet_link_tag  'style.css' %>
+    <%= stylesheet_link_tag("lightbox") %>
+    <%= stylesheet_link_tag("lightbox_ruby") %>
+    <%= javascript_include_tag :all %>
+    <%= ajaxful_rating_style %>
+  </head>
+  <body>
+
+    <script language="JavaScript1.2">
+
+      var slidemenu_height='250px' //specify height of menu (in pixels throughout)
+      var slidemenu_width='170px' //specify width of menu
+      var slidemenu_reveal='0px' //specify amount that menu should protrude initially
+      var slidemenu_top='120px'   //specify vertical offset of menu on page
+
+      rightboundary=0
+      leftboundary=(parseInt(slidemenu_width)-parseInt(slidemenu_reveal))*-1
+    </script>
+
+    <script language="JavaScript1.2">
+      document.write('<style>\n#slidemenubar-full{\nwidth:'+slidemenu_width+';\n top:'+slidemenu_top+';\n height:'+slidemenu_height+';}\n<\/style>\n')
+      document.write('<div id="slidemenubar-full" left=0px visibility=hide>')
+    </script>
+    <% cache("full_menu") do %>
+      <%= render(:partial => 'layouts/side_full_categories_menu.html') %>
+    <% end %>
+    <script language="JavaScript1.2">
+      document.write('</div>')
+    </script>
+
+
+    <script language="JavaScript1.2">
+      document.write('<style>\n#slidemenubar-group{\nwidth:'+slidemenu_width+';}\n<\/style>\n')
+      document.write('<div id="slidemenubar-group" left=0px visibility=hide>')
+    </script>
+    <% unless session[:user_id].nil? %>
+      <% cache("group_menu") do %>
+        <%= render(:partial => 'layouts/side_group_categories_menu.html') %>
+      <% end %>
+    <% end %>
+    <script language="JavaScript1.2">
+      document.write('</div>')
+    </script>
+
+
+
+    <script language="JavaScript1.2">
+      document.write('<style>\n#slidemenubar-related{\nwidth:'+slidemenu_width+';}\n<\/style>\n')
+      document.write('<div id="slidemenubar-related" left=0px visibility=hide>')
+    </script>
+    <% if controller.controller_name == "patterns" and controller.action_name == "show" %>
+      <%= render(:partial => 'layouts/side_related_categories_menu.html') %>
+    <% end %>
+    <script language="JavaScript1.2">
+      document.write('</div>')
+    </script>
+
+
+    <script language="JavaScript1.2">
+
+      function regenerate(){
+        window.location.reload()
+      }
+      function regenerate2(){
+        document.getElementById("slidemenubar-full").left=((parseInt(slidemenu_width)-parseInt(slidemenu_reveal))*-1)
+        document.getElementById("slidemenubar-full").visibility="show"
+        document.getElementById("slidemenubar-group").left=((parseInt(slidemenu_width)-parseInt(slidemenu_reveal))*-1)
+        document.getElementById("slidemenubar-group").visibility="show"
+        document.getElementById("slidemenubar-related").left=((parseInt(slidemenu_width)-parseInt(slidemenu_reveal))*-1)
+        document.getElementById("slidemenubar-related").visibility="show"
+        setTimeout("window.onresize=regenerate",400)
+      }
+
+      window.onload=regenerate2
+      
+    </script>
+
+    <div id="wrapper" class="clearfix">
+      <div id="header-wrapper" class="clearfix">
+        <div id="header">
+          <div id="logo">
+            <h1><a href="<%= url_for(patterns_path) %>">Pearson Pattern Library</a></h1>
+          </div>
+          <!-- end #logo -->
+          <div id="top-menu">
+            <%= render(:partial => 'layouts/top_menu.html') %>
+          </div>
+
+          <!-- end #menu -->
+        </div>
+
+        <!-- end #header -->
+      </div>
+
+      <!-- end #header-wrapper -->
+
+      <div id="page">
+        <div id="content">
+
+          <p id="flashNotice" style="color: green"><%= flash[:notice] %></p>
+          <div id="error_list">
+            <% unless flash[:errors].nil? %>
+              <div id="errorExplanation"><%= flash[:errors] %></div>
+            <% end %>
+          </div>
+          <%= yield %>
+        </div>
+        <!-- end #content -->
+
+        <div id="sidebar">
+          <dl class="search box">
+            <dt>Search</dt>
+            <dd class="last">
+              <%= render(:partial => "layouts/search_box") %>
+            </dd>
+          </dl>
+          <div id="login-errors"></div>
+          <dl class="box">
+            <dt>Members Area</dt>
+            <dd class="last">
+              <div id="login-div">
+                <% if session[:user_id].nil? %>
+                  <%= render(:partial => "admin/login") %>
+                <% else %>
+                  <%= render(:partial => "admin/logout", :locals => { :user => User.find(session[:user_id]) }) %>
+                <% end %>
+              </div>
+            </dd>
+          </dl>
+          <div id="admin-menu"><%= render(:partial => 'layouts/side_admin_menu.html') %></div>
+        </div>
+        <!-- end #sidebar -->
+
+        <div id="footer" class="clear">
+          <p>(c) 2009 thehonted.com/pattern-library. Design by <a href="http://www.thehonted.com/">Quinn Chaffee</a></p>
+
+        </div>
+        <!-- end #footer -->
+
+      </div>
+      <!-- end #page -->
+    </div>
+
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-15858920-2");
+        pageTracker._trackPageview();
+      } catch(err) {}</script>
+  </body>
+</html>

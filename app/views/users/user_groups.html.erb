@@ -1,0 +1,14 @@
+<h2><%= @user.get_display_name %>'s Groups</h2>
+<% unless @groups.count > 0 %>
+<p>No Current Groups</p>
+<% else %>
+  <% @groups.each do |group| %><br/>
+    <h3><%= group.name %></h3>
+    <% patterns = group.tag.patterns %>
+    <ul>
+      <% patterns.each do |pattern| %>
+        <li><%= link_to pattern.name, {:controller => "patterns", :action => "show", :id => pattern.id} %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

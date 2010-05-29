@@ -1,0 +1,21 @@
+<div class="pattern-header">
+  <a href="<%= url_for(:controller => 'patterns', :action => 'show', :id => pattern.id) %>">
+    <% if pattern.thumbnail %>
+      <img class="thumbnail" src="<%= url_for(:controller => 'thumbnails', :action => 'get_image_for_thumbnail', :id => pattern.thumbnail.id) %>" alt="Pattern Thumbnail"/>
+    <% else %>
+      <%= image_tag("default_thumbnail.jpg", :class => "thumbnail", :alt => "Pattern Thumbnail") %>
+    <% end %>
+  </a>
+  <h2><%= link_to pattern.name, pattern, :class => 'h2' %></h2>
+  <p>
+    <strong>Description:</strong>
+    <%= format_output(pattern.description)  %>
+  </p>
+  <div class="rating">
+    Rating:<br/>
+    <%= ratings_for pattern, :force_static => true, :dimension => :usefulness, :small => true, :show_user_rating => false %>
+  </div>
+  <p>
+    <strong>Creator: </strong><%=h pattern.author_name %>
+  </p>
+</div><hr/>

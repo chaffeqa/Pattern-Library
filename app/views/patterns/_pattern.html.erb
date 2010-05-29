@@ -1,0 +1,87 @@
+<fieldset>
+  <label for="pattern_name">Name of Pattern<br/>
+    <span class="description">This is the most generic term a pattern could be
+      referred to as, so long that it is clear and understandable.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“Contextual Menu (C-menu)”</span>
+  </label>
+  <%= pattern.text_field :name %>
+</fieldset>
+<fieldset>
+  <label for="pattern_description">Description<br/>
+    <span class="description">A basic, yet clear description of the pattern should
+      be offered immediately after the name of the pattern. This can serve as an
+      overview of the pattern’s main functionality and interaction.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“A layer containing a group of options, actions or
+      information directly related (and contextual to) the focused or active
+      mode, object or view. Users need to have direct access to sub-navigation
+      but the amount of screen estate for navigation is limited.”</span>
+  </label>
+  <%= pattern.text_area :description %>
+</fieldset>
+<fieldset>
+  <label for="pattern_when_to_use">When To Use This Pattern<br/>
+    <span class="description">This section aims to provide a simple description
+      regarding the scenario(s) that would benefit from having this pattern
+      implemented. It’s primarily intended for Product Managers who need to
+      understand when this pattern could solve a particular need in a web site.
+      It can be displayed as a brief description, or a short set of bullet-points
+      when addressing different solutions.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">* To group options and reveal them to the user
+      as close to the interaction as possible.<br/>
+      * For experienced users who want quick access to menu items.
+    </span>
+  </label>
+  <%= pattern.text_area :when_to_use %>
+</fieldset>
+<fieldset>
+  <label for="pattern_how_to_interact">How To Interact With This Pattern<br/>
+    <span class="description">This section is primarily concerned with end users.
+      It reads like a collection of directions to follow when interacting with
+      the pattern, where tasks and processes are highlighted. The process
+      description can also be described with bullet-points, or a numbered list.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">1. Reveal c-menu selection button by hovering over item.<br/>
+      2. Reveal menu by clicking button.<br/>
+      3. Perform task by clicking name of it.<br/></span>
+  </label>
+  <%= pattern.text_area :how_to_interact %>
+</fieldset>
+<fieldset>
+  <label for="pattern_how_to_implement">How To Implement This Pattern<br/>
+    <span class="description">This section focuses on the functional part of
+      what it is described in the section immediately above. It is intended
+      primarily for developers to know all the different behaviors possible
+      within the pattern so it can be implemented adequately.</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">* Default visual state of item in list will
+      still occur on hover state.<br/>
+      * C-menu expands directly up, down or right (never left) in such a way
+      that it does not cover the menu item.<br/>
+      * Menu is broken up into logical sections—actions (e.g. open, edit,
+      view) and remove/delete in the case of the item c-menu. Other sections are
+      available in Contextual menu (menu/toolbar).<br/>
+      * Menu items should be found always in the same order.<br/>
+      * Additional subtasks related to the main task can be revealed in a fly
+      out menu revealed on hover over initial task. The flying-out should be instant
+      or very quick otherwise users cannot switch quickly (see screenshot).</span>
+  </label>
+  <%= pattern.text_area :how_to_implement %>
+</fieldset>
+<fieldset>
+  <label for="pattern_why_use">Why Use This Pattern<br/>
+    <span class="description">As the title suggests, this section intends on
+      presenting the reasoning behind using the pattern. It has user
+      interface/experience designers in mind. Most importantly, this section aims
+      to highlight the solution to a user interface interaction problem more
+      thoroughly than the “When To Use This Pattern” section</span><br/>
+    <span class="example_header">Example:</span><br />
+    <span class="example">“C-menus save space that may be used better for the
+      content area of the site. If executed well with the mentioned points, it
+      provides very quick access to sections in the site without cluttering up
+      the screen estate with navigation.”</span>
+  </label>
+  <%= pattern.text_area :why_use %>
+</fieldset>

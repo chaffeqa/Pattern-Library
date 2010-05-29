@@ -1,0 +1,13 @@
+<% if is_admin %>
+  <dl id="nav-list">
+    <dt>Administrative Options</dt>
+    <dd><%= link_to 'User Management', :controller => 'users', :action => 'index' %></dd>
+    <dd><%= link_to 'Roles Management', :controller => 'roles', :action => 'index' %></dd>
+    <dd><%= link_to 'User Roles Management', :controller => 'roles_manager', :action => 'index' %></dd>
+    <dd><%= link_to 'Group Management', :controller => 'groups', :action => 'index' %></dd>
+    <dd><%= link_to 'User Groups Management', :controller => 'groups_manager', :action => 'index' %></dd>
+    <dd><%= link_to 'Menu Management', :controller => 'menu', :action => 'index' %></dd>
+    <dd><%= link_to 'Review Submitted Patterns', :controller => 'patterns_admin', :action => 'submitted_patterns' %></dd>
+  </dl>
+<%end%>
+

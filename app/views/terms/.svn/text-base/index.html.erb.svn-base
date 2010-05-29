@@ -1,0 +1,26 @@
+<h2 style="text-align: center;">Glossary</h2>
+
+<table>
+  <tr>
+    <th>Term</th>
+    <th>Definition</th>
+  </tr>
+
+  <% @terms.each do |term| %>
+    <tr>
+      <td><b><%=h term.term %></b></td>
+      <td><%=h term.definition %></td>
+      <% if is_admin %>
+        <td><%= link_to 'Edit', edit_term_path(term), :class => 'small-button' %></td>
+        <td><%= link_to 'Destroy', term, :confirm => 'Are you sure?', :method => :delete, :class => 'small-button' %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @terms %>
+
+<br />
+<% if is_admin %>
+  <%= link_to 'New term', new_term_path, :class => 'button' %>
+<% end %>
